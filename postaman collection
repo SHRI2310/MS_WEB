@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "524c7c70-7b79-43de-b2f9-38f1c1d6867e",
+		"name": "MS_WEB_PROJECT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n      \"title\":\"Mr\",\r\n        \"name\":\"Shrikant\",\r\n        \"middleName\":\"kishor\",\r\n        \"lastName\":\"Ajmire\",\r\n        \"address\":{\r\n            \"state\":\"Maharashtra\",\r\n            \"city\":\"Wardha\",\r\n            \"pincode\":\"442001\"\r\n        },\r\n        \"mobile\":\"8623087242\",\r\n         \"email\":\"shrikantajmire@gmail.com\",\r\n         \"password\":\"pass1234\",\r\n         \"bankName\":\"SBI\",\r\n         \"accountName\":\"SHRI AJMIRE \",\r\n         \"accountNumber\":\"123456778\",\r\n         \"IFSC\":\"12335\",\r\n         \"panCardNo\":\"12345\",\r\n         \"gstNumber\":\"98765\",\r\n         \"adharNumber\":\"987665544\"\r\n         ,\"qualification\":\"BHMCT\",\r\n         \"nominieeDetails\":\" my details\"\r\n        }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/route/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"route",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Questions",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
